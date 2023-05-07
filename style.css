@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+    font: tahoma;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: goldenrod;
+    background-color: aliceblue;
+}
+
+.carousel {
+    background-color: grey;
+    display: block;
+    margin: auto;
+    height: 500px;
+}
+
+.theme-description {
+    color: white;
+    font-size: 16px;
+}
+
+.user-quote {
+    font-size: 28px;
+    color: blue;
+}
+
+.book{
+    display: flex;
+    align-items: center;
+}
+
+.cover, .back-cover{
+    background-color: tan;
+    height: 100px;
+    width: 100px;
+}
