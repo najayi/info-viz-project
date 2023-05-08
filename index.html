@@ -13,45 +13,75 @@
   </head>
 
   <body>
-    <!-- Add a top bar? With nav menu? -->
+    <!-- Project Title -->
+    <div class="project-title">
+      <h1>A Playbook to be Proud of-</h1>
+      <h3>Implementing inclusivity</h3>
+    </div>
+    <div class="row">
+      <div class="blink-arrow blink">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          fill="grey"
+          class="bi bi-arrow-down"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+          />
+        </svg>
+      </div>
+    </div>
     <!-- Intro and Summary section -->
     <div class="intro container">
-      <h1>LGBTQ+ Inclusive Design</h1>
-      <p>
-        Digital platforms utilize data collection processes to assess
-        demographic data about their users through user account (UA) creation.
-        The information that these platforms require users to fill out include
-        selecting preferences that provide options which oftentimes misrepresent
-        gender and sexual orientation identities of users, disproportionately
-        affecting the LGBTQ+ population. Presenting data from LGBTQ+ users of
-        technology from our research, this website will show user account design
-        features that may result in LGBTQ+ misrepresentation and exclusion. We
-        ultimately informed our research findings to develop a digital playbook
-        that aims to upskill and impact individuals in industry to implement
-        LGBTQ+ inclusive design as a forethought within product development,
-        which you can find [here - maybe link to that part of website?].
-      </p>
+      <h2>LGBTQ+ Inclusive Design</h2>
+      <div class="row intro-text-area">
+        <div class="col">
+          <img class="intro-image" src="./images/user_profile.png" />
+        </div>
+        <div class="col">
+          <p class="intro-text">
+            User Accounts often asks that users offer normative & static options
+            for gender, name, sex, and more, disproportionately affecting the
+            LGBTQ+ population. This website will show user account design
+            features that may result in LGBTQ+ misrepresentation and exclusion.
+            The following research informed a digital playbook that aims to
+            upskill product professionals to implement LGBTQ+ inclusive design
+            as a forethought within product development, which you can find
+            <a href="#the-playbook">here</a>.
+          </p>
+        </div>
+      </div>
     </div>
 
+    <div class="section-title">
+      <h3 class="section-title-text">User Experiences</h3>
+    </div>
     <!-- Split row for signup and comments -->
     <div class="container">
       <div class="row">
         <!-- Sign up screenshot with indexing -->
-        <div class="col">
+        <div class="col-lg-4">
           <img
             src="./images/signup-page.png"
             alt="app signup page"
-            width="400px"
+            width="100%"
           />
         </div>
-      </div>
-      <!-- Carousel with specific info -->
-      <!-- <div class="col-lg-8">
-          <div id="carouselExampleCaptions" class="carousel slide">
+        <!-- Carousel with specific info -->
+        <div class="col-lg-8">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
@@ -59,87 +89,44 @@
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="carousel">
-                  <h2>Desire to share representative information</h2>
-                  <div class="row">
-                    <div class="col">
-                      <p class="theme-description">
-                        The graph on the left shows LGBTQ+ users desires to be
-                        presented accurate representative information to fill
-                        when signing up for user accounts, however, the example
-                        below lacks a multitude of drop down options for users
-                        to accurate identify as they would like resulting in
-                        misrepresentation
-                      </p>
-                    </div>
-                    <div class="col">
-                      <svg>
-                        <rect width="100%" height="100px"></rect>
-                      </svg>
-                    </div>
-                  </div>
-                  <p class="user-quote">
-                    "There's definitely some trauma around it, too, you know,
-                    it's like, is it always safe to identify in some way
-                    that's…different in some ways. So it's just not so easy
-                    always to [share information to a platform] that you don't
-                    feel safe with"
-                  </p>
-                </div>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
+                <img
+                  src="./images/desire.png"
+                  class="d-block carousel-image"
+                  alt="desire to share"
+                />
               </div>
               <div class="carousel-item">
-                <svg class="carousel" width="100%" height="600">
-                  <rect x="10%" y="25%" width="80%" height="400" />
-                  <text x="10%" y="10%">
-                    Desire to share representative information
-                  </text>
-                </svg>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
+                <img
+                  src="./images/hesitant.png"
+                  class="d-block carousel-image"
+                  alt="hesitant to share"
+                />
               </div>
               <div class="carousel-item">
-                <svg class="carousel" width="100%" height="600">
-                  <rect x="10%" y="25%" width="80%" height="400" />
-                  <text x="10%" y="10%">
-                    Desire to share representative information
-                  </text>
-                </svg>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
+                <img
+                  src="./images/reluctant.png"
+                  class="d-block carousel-image"
+                  alt="reluctantly sharing"
+                />
               </div>
             </div>
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide="prev"
             >
               <span
@@ -151,7 +138,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide="next"
             >
               <span
@@ -161,31 +148,25 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </div> -->
-      <div class="row">
-        <div class="blink-arrow blink">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            fill="magenta"
-            class="bi bi-arrow-down"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-            />
-          </svg>
         </div>
       </div>
-      <!-- Change to a scrolly region -->
+      <!-- Change to a scroll region -->
       <div class="all-themes">
         <div class="themed-section">
           <p class="theme-title">
             <span class="main-title">Desire</span> to share representative
             information.
           </p>
+          <p class="theme-blurb">
+            In many user account interfaces, the options provided are limited,
+            and restrictive. In this facebook sign up example, users are limited
+            to using either “he,” “she,” or “they” when they click custom
+            gender, ignoring the existence of gender fluid pronouns such as
+            “she/they,” “he/they,” etc.
+          </p>
+          <div class="theme-screenshot">
+            <img class="theme-shot" src="./images/gender_options_3.png" />
+          </div>
           <p class="user-quote">
             "The lack of options and the way they bunch together the other
             options that aren't just male or female, like non-binary, trans,
@@ -202,15 +183,21 @@
           <div class="theme-plot">
             <img class="theme-viz" src="./images/desire_bar_plot.png" />
           </div>
-          <div class="theme-screenshot">
-            <img class="theme-shot" src="./images/gender_options_3.png" />
-          </div>
         </div>
         <div class="themed-section">
           <p class="theme-title">
             <span class="main-title">Hesitancy</span> to share representative
             information.
           </p>
+          <p class="theme-blurb">
+            As marginalized groups, LGBTQ+ users are hesitant to share
+            information due to lack of trust, and high values of data privacy
+            and safety. In the screenshot, users' information are publicly
+            visible with no options for anonymity.
+          </p>
+          <div class="theme-screenshot">
+            <img class="theme-shot" src="./images/gender_options_1.png" />
+          </div>
           <p class="user-quote">
             "There's definitely some trauma around it, too, you know, it's like,
             is it always safe to identify in some way that's…different in some
@@ -248,15 +235,20 @@
               });
             </script>
           </div>
-          <div class="theme-screenshot">
-            <img class="theme-shot" src="./images/gender_options_1.png" />
-          </div>
         </div>
         <div class="themed-section">
           <p class="theme-title">
             <span class="main-title">Reluctantly</span> sharing representative
             information.
           </p>
+          <p class="theme-blurb">
+            Due to required fields, users are forced to comply in sharing
+            information, and with inaccurate options, they result in filling out
+            information that is misrepresentative of their true identities.
+          </p>
+          <div class="theme-screenshot">
+            <img class="theme-shot" src="./images/gender_options_2.png" />
+          </div>
           <p class="user-quote">
             "I'm just so used to it, I'm used to choosing all these markers
             about yourself forever and I'm desensitized to it. Ugh, this is what
@@ -275,14 +267,57 @@
           <div class="theme-plot">
             <img class="theme-viz" src="./images/horiz_bar_plot.png" />
           </div>
-          <div class="theme-screenshot">
-            <img class="theme-shot" src="./images/gender_options_2.png" />
-          </div>
         </div>
       </div>
     </div>
+
+    <div class="section-title">
+      <h3 class="section-title-text">User Comfort</h3>
+    </div>
+    <!-- Heat Map -->
+    <!-- Each app type -->
+    <div>
+      <!-- Social Media -->
+      <div></div>
+    </div>
+    <!-- Summary Heatmap -->
+    <div>
+      <p>
+        Researchers surveyed all users on their comfort levels associated with
+        sharing SOGI related data with different types of industries, gauging
+        how an industry affected users’ hesitance, resistance, and compliance.
+        Users were able to multi-select all industries with which they were
+        comfortable sharing.
+      </p>
+      <div id="observablehq-comfort_map-334566e5"></div>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
+      />
+      <p>
+        Overall, users were most comfortable sharing SOGI-related data with
+        Telehealth Apps, followed closely by Social Media and Dating Apps. Game
+        or Puzzle apps ranked least comfortable across almost all data fields.
+        Hotel or Vacation Rental Apps and Finance Apps, while ranking near
+        comfortable for Legal and Preferred Names, were among the least
+        comfortable industries for sharing other SOGI data.
+      </p>
+      <script type="module">
+        import {
+          Runtime,
+          Inspector,
+        } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/cbdb59f96b02f631.js?v=3";
+        new Runtime().module(define, (name) => {
+          if (name === "comfort_map")
+            return new Inspector(
+              document.querySelector("#observablehq-comfort_map-334566e5")
+            );
+        });
+      </script>
+    </div>
     <!-- Play book -->
-    <div class="container">
+    <div class="container" id="the-playbook">
       <div class="row">
         <div class="col">
           <div class="row-2"></div>
@@ -314,7 +349,7 @@
                   </p>
                 </div>
                 <div class="col">
-                  <img class="playbook-viz" src="./images/tree_diagram.png"/>
+                  <img class="playbook-viz" src="./images/tree_diagram.png" />
                 </div>
               </div>
             </div>
@@ -336,7 +371,7 @@
                     experience symptoms of Anxiety and Depression.
                   </p>
                   <p>
-                    Learn More
+                    Explore More
                     <a
                       href="https://www.notion.so/understanding-3f7bcef1db6645998dab732acd2e5e05?pvs=4"
                       >Here</a
@@ -422,7 +457,7 @@
                     sankeys for specific industry considerations.
                   </p>
                   <p>
-                    Learn More
+                    Explore More
                     <a
                       href="https://empty-cadmium-890.notion.site/designing-0b67d0a3d51644ab9f806905823e55c8"
                       >Here</a
@@ -430,7 +465,7 @@
                   </p>
                 </div>
                 <div class="col">
-                  <img src="./images/tree_diagram.png"/>
+                  <img class="playbook-viz" src="./images/tree_diagram.png" />
                 </div>
               </div>
             </div>
@@ -444,16 +479,12 @@
                     metrics, and team inclusion will be found here.
                   </h4>
                   <p>
-                    In this research, authors found that PMs would often want to
-                    start their processes in asking for feedback from Users.
-                    Whether that is conducted by PMs or their UX Teams, this
-                    chart shows how LGBTQ+ users prefer to give feedback. This
-                    data was gathered from a user feedback survey to ensure we
-                    gave the best advice to product professionals on how to
-                    engage with their users more authentically.
+                    70% of Product Professionals we spoke to had mid-senior
+                    level positions in their company. The power to make impact
+                    can rest with these people and how they lead their teams.
                   </p>
                   <p>
-                    Learn More
+                    Explore More
                     <a
                       href="https://empty-cadmium-890.notion.site/implementing-4d863bca0b854171ade77700c97b60d9"
                       >Here</a
@@ -461,10 +492,10 @@
                   </p>
                 </div>
                 <div class="col">
-                  <!-- VIZ PLACEHOLDER -->
-                  <svg width="600px" height="400px">
-                    <rect fill="green" width="100px" height="100px"></rect>
-                  </svg>
+                  <img
+                    class="playbook-viz"
+                    src="./images/Implementing Isotype.svg"
+                  />
                 </div>
               </div>
             </div>
@@ -498,40 +529,37 @@
         </div>
       </div>
     </div>
-    <!-- Other viz -->
-    <div>
-      <!-- Heat Map -->
-      <!-- Each app type -->
-      <div>
-        <!-- Social Media -->
-        <div></div>
-      </div>
-      <!-- Summary Heatmap -->
-      <div>
-        <div id="observablehq-comfort_map-334566e5"></div>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
-        />
-        <script type="module">
-          import {
-            Runtime,
-            Inspector,
-          } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-          import define from "https://api.observablehq.com/d/cbdb59f96b02f631.js?v=3";
-          new Runtime().module(define, (name) => {
-            if (name === "comfort_map")
-              return new Inspector(
-                document.querySelector("#observablehq-comfort_map-334566e5")
-              );
-          });
-        </script>
-      </div>
-      <!-- Sankey? -->
-      <div></div>
-    </div>
 
     <!-- Conclusion? -->
+    <footer class="site-footer center-content-mobile">
+      <div class="container" id="footer">
+        <div
+          class="site-footer-inner"
+          style="
+            font-size: 12px;
+            padding-top: 3vh;
+            padding-bottom: 1vh;
+            text-align: center;
+          "
+        >
+          <p>
+            <span style="font-size: 16px">
+              Click
+              <a
+                href="https://www.ischool.berkeley.edu/sites/default/files/sproject_attachments/a_playbook_to_be_proud_of_lgbtq_inclusive_user_account_design_guide_.pdf"
+                target="_blank"
+              >
+                Here </a
+              >for the full research paper.</span
+            ><br />University of California, Berkeley, School of Information,
+            MIMS 2023. <br />Researched by: Beatrice Fadrigon, Princess Gordon,
+            and Jane Lupica<br />Website by: Dara Ajayi <br />Playbook - &#169;
+            BY-NC-SA B. Fadrigon, P. Gordon, J. Lupica, 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <div></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

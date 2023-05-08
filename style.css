@@ -1,5 +1,5 @@
 *{
-    font-family: sans-serif;
+    font-family: "Gill Sans" sans-serif;
     font: tahoma;
 }
 
@@ -10,26 +10,90 @@ body{
 }
 
 h1 {
-    color: goldenrod;
-    background-color: aliceblue;
+    
+}
+
+a {
+    color: inherit;
 }
 
 .carousel {
     background-color: grey;
+    align-items: center;
     display: block;
     margin: auto;
+}
+
+.carousel-item {
+    padding: 50px 25%;
+    align-items: center;
+    height: 400px;
+    background-color: #E8BBE8;
+}
+
+.carousel-image{
+    width: 300px;
+    height: 300px
+}
+
+.project-title{
+    padding-top: 35vh;
+    height: 85vh;
+    background-image: url(./images/big_background.png);
+    background-size: cover;
+    color: aliceblue;
+}
+
+.section-title{
+    padding-top: 40px;
+    height: 140px;
+    background-image: url(./images/big_background.png);
+    background-size: cover;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.section-title-text {
+    font-size: 48px;
+}
+
+.intro {
+    padding-top: 15vh;
+    height: 100vh;
+}
+
+.intro-text-area {
     height: 500px;
+    align-items: center;
+    text-align: left;
+    color: #000;
+}
+
+.intro-text {
+    width: 55%;
+    padding-left: 5%;
+}
+
+.intro-image{
+    width: 50%;
+    float: right;
+}
+
+.blink-arrow {
+    padding: 5vh 0vh;
 }
 
 .theme-description {
-    color: white;
-    background-color: blue;
     font-size: 16px;
 }
 
 .user-quote {
     font-size: 28px;
-    color: blue;
+    background-image: url(./images/big_background.png);
+    color: aliceblue;
+    border-radius: 10px;
+    width: 40%;
+    background-size: cover;
 }
 
 .container{
@@ -95,4 +159,16 @@ h1 {
 
 .playbook-page {
     align-items: center;
+}
+
+footer{
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    width: auto;
+    height: 170px;
+    background-image: url(./images/Gradient\ Futuristic\ Group\ Start\ Up\ Business\ Twitter\ Header.svg);
+    background-size: cover;
 }
