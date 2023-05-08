@@ -152,6 +152,8 @@
       </div>
       <!-- Change to a scroll region -->
       <div class="all-themes">
+        <div class="subsection-divider">
+        </div>
         <div class="themed-section">
           <p class="theme-title">
             <span class="main-title">Desire</span> to share representative
@@ -164,25 +166,43 @@
             gender, ignoring the existence of gender fluid pronouns such as
             “she/they,” “he/they,” etc.
           </p>
-          <div class="theme-screenshot">
-            <img class="theme-shot" src="./images/gender_options_3.png" />
+          <div class="container">
+            <div class="row theme-story">
+              <div class="col-lg-6">
+                <div class="theme-screenshot">
+                  <img class="theme-shot" src="./images/gender_options_3.png" />
+                </div>
+              </div>
+              <div class="col-lg-6 user-quote">
+                <p>
+                  "The lack of options and the way they bunch together the other
+                  options that aren't just male or female, like non-binary,
+                  trans, gender fluid, everything else. It's either you are cis
+                  or something else."
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="user-quote">
-            "The lack of options and the way they bunch together the other
-            options that aren't just male or female, like non-binary, trans,
-            gender fluid, everything else. It's either you are cis or something
-            else."
-          </p>
-          <p class="theme-description">
-            This bar graph shows LGBTQ+ users' desires to be presented accurate
-            representative information to fill when signing up for user
-            accounts, however, the example signup screen lacks a multitude of
-            drop down options for users to accurate identify as they would like
-            resulting in misrepresentation.
-          </p>
-          <div class="theme-plot">
-            <img class="theme-viz" src="./images/desire_bar_plot.png" />
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 theme-description">
+                <p>
+                  This bar graph shows LGBTQ+ users' desires to be presented
+                  accurate representative information to fill when signing up
+                  for user accounts, however, the example signup screen lacks a
+                  multitude of drop down options for users to accurate identify
+                  as they would like resulting in misrepresentation.
+                </p>
+              </div>
+              <div class="col-lg-8">
+                <div class="theme-plot">
+                  <img class="theme-viz" src="./images/desire_bar_plot.png" />
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="subsection-divider">
         </div>
         <div class="themed-section">
           <p class="theme-title">
@@ -195,46 +215,68 @@
             and safety. In the screenshot, users' information are publicly
             visible with no options for anonymity.
           </p>
-          <div class="theme-screenshot">
-            <img class="theme-shot" src="./images/gender_options_1.png" />
+          <div class="container">
+            <div class="row theme-story">
+              <div class="col-lg-6">
+                <div class="theme-screenshot">
+                  <img class="theme-shot" src="./images/gender_options_1.png" />
+                </div>
+              </div>
+              <div class="col-lg-6 user-quote">
+                <p>
+                  "There's definitely some trauma around it, too, you know, it's
+                  like, is it always safe to identify in some way
+                  that's…different in some ways. So it's just not so easy always
+                  to [share information to a platform] that you don't feel safe
+                  with."
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="user-quote">
-            "There's definitely some trauma around it, too, you know, it's like,
-            is it always safe to identify in some way that's…different in some
-            ways. So it's just not so easy always to [share information to a
-            platform] that you don't feel safe with."
-          </p>
-          <p class="theme-description">
-            The sankey diagram shows users varying comfort in sharing pronoun
-            information across platforms, however, some users show hesitancy in
-            sharing such information. The below account makes this information
-            publicly visible, which can result in higher levels of discomfort
-            for some LGBTQ+ users.
-          </p>
-          <div class="theme-plot">
-            <h3>
-              LGBTQ+ Population Comfort Levels in Sharing Pronouns Across
-              Digital Applications
-            </h3>
-            <div id="observablehq-svg11-5166fb70"></div>
-            <link
-              rel="stylesheet"
-              href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
-            />
-            <script type="module">
-              import {
-                Runtime,
-                Inspector,
-              } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-              import define from "https://api.observablehq.com/d/eb49b91e3a3b00a1.js?v=3";
-              new Runtime().module(define, (name) => {
-                if (name === "svg11")
-                  return new Inspector(
-                    document.querySelector("#observablehq-svg11-5166fb70")
-                  );
-              });
-            </script>
+          <div class="container">
+            <div class="row">
+              <div class="data-text">
+                <p>The Data</p>
+              </div>
+              <div class="col">
+                <div class="theme-plot">
+                  <h3>
+                    LGBTQ+ Population Comfort Levels in Sharing Pronouns Across
+                    Digital Applications
+                  </h3>
+                  <div id="observablehq-svg11-5166fb70"></div>
+                  <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
+                  />
+                  <script type="module">
+                    import {
+                      Runtime,
+                      Inspector,
+                    } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                    import define from "https://api.observablehq.com/d/eb49b91e3a3b00a1.js?v=3";
+                    new Runtime().module(define, (name) => {
+                      if (name === "svg11")
+                        return new Inspector(
+                          document.querySelector("#observablehq-svg11-5166fb70")
+                        );
+                    });
+                  </script>
+                </div>
+              </div>
+              <div class="theme-description">
+                <p>
+                  The sankey diagram shows users varying comfort in sharing
+                  pronoun information across platforms, however, some users show
+                  hesitancy in sharing such information. The below account makes
+                  this information publicly visible, which can result in higher
+                  levels of discomfort for some LGBTQ+ users.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="subsection-divider">
         </div>
         <div class="themed-section">
           <p class="theme-title">
@@ -246,26 +288,42 @@
             information, and with inaccurate options, they result in filling out
             information that is misrepresentative of their true identities.
           </p>
-          <div class="theme-screenshot">
-            <img class="theme-shot" src="./images/gender_options_2.png" />
+          <div class="container">
+            <div class="row theme-story">
+              <div class="col-6">
+                <div class="theme-screenshot">
+                  <img class="theme-shot" src="./images/gender_options_2.png" />
+                </div>
+              </div>
+              <div class="col-6 user-quote">
+                <p>
+                  "I'm just so used to it, I'm used to choosing all these
+                  markers about yourself forever and I'm desensitized to it.
+                  Ugh, this is what I have to do even if it's not truly how I
+                  want to fill it out. It's just how it goes."
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="user-quote">
-            "I'm just so used to it, I'm used to choosing all these markers
-            about yourself forever and I'm desensitized to it. Ugh, this is what
-            I have to do even if it's not truly how I want to fill it out. It's
-            just how it goes."
-          </p>
-          <p class="theme-description">
-            Since the example below has required fields for gender, users are
-            forced to provide information that they may not necessarily have
-            otherwise chosen to give. The bar chart on the right shows users
-            responses to Q12. While users did feel somewhat included, given that
-            the below example is a social media app, we can explore the nuances
-            that come with sharing information across varying platforms in
-            exploring Q11.
-          </p>
-          <div class="theme-plot">
-            <img class="theme-viz" src="./images/horiz_bar_plot.png" />
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 theme-description">
+                <p>
+                  Since the example below has required fields for gender, users
+                  are forced to provide information that they may not
+                  necessarily have otherwise chosen to give. The bar chart on
+                  the right shows users responses to Q12. While users did feel
+                  somewhat included, given that the below example is a social
+                  media app, we can explore the nuances that come with sharing
+                  information across varying platforms in exploring Q11.
+                </p>
+              </div>
+              <div class="col-lg-8">
+                <div class="theme-plot">
+                  <img class="theme-viz" src="./images/horiz_bar_plot.png" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -435,6 +493,7 @@
                         vizElement
                       );
                     </script>
+                    <p>Data Source: Pew Research</p>
                   </div>
                 </div>
               </div>
@@ -503,7 +562,7 @@
               <div class="row">
                 <div class="col">
                   <p>
-                    Considering users’ sentiments and experiences navigating
+                    Considering users' sentiments and experiences navigating
                     user accounts, this research highlights experiences of
                     misrepresentation, distrust, and exclusion when users are
                     subjected to limited or inaccurate options during the
