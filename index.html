@@ -37,15 +37,16 @@
     <div class="container">
       <div class="row">
         <!-- Sign up screenshot with indexing -->
-        <div class="col-lg-4">
+        <div class="col">
           <img
             src="./images/signup-page.png"
             alt="app signup page"
-            width="100%"
+            width="400px"
           />
         </div>
-        <!-- Carousel with specific info -->
-        <div class="col-lg-8">
+      </div>
+      <!-- Carousel with specific info -->
+      <!-- <div class="col-lg-8">
           <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
               <button
@@ -160,6 +161,22 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </div> -->
+      <div class="row">
+        <div class="blink-arrow blink">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="magenta"
+            class="bi bi-arrow-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+            />
+          </svg>
         </div>
       </div>
       <!-- Change to a scrolly region -->
@@ -170,23 +187,23 @@
             information.
           </p>
           <p class="user-quote">
-            The lack of options and the way they bunch together the other
+            "The lack of options and the way they bunch together the other
             options that aren't just male or female, like non-binary, trans,
             gender fluid, everything else. It's either you are cis or something
-            else.
+            else."
           </p>
           <p class="theme-description">
-            The graph on the left shows LGBTQ+ users' desires to be presented
-            accurate representative information to fill when signing up for user
-            accounts, however, the example below lacks a multitude of drop down
-            options for users to accurate identify as they would like resulting
-            in misrepresentation.
+            This bar graph shows LGBTQ+ users' desires to be presented accurate
+            representative information to fill when signing up for user
+            accounts, however, the example signup screen lacks a multitude of
+            drop down options for users to accurate identify as they would like
+            resulting in misrepresentation.
           </p>
           <div class="theme-plot">
-            <!-- VIZ PLACEHOLDER -->
-            <svg width="600px" height="400px">
-              <rect fill="green" width="100px" height="100px"></rect>
-            </svg>
+            <img class="theme-viz" src="./images/desire_bar_plot.png" />
+          </div>
+          <div class="theme-screenshot">
+            <img class="theme-shot" src="./images/gender_options_3.png" />
           </div>
         </div>
         <div class="themed-section">
@@ -195,48 +212,71 @@
             information.
           </p>
           <p class="user-quote">
-            The lack of options and the way they bunch together the other
-            options that aren't just male or female, like non-binary, trans,
-            gender fluid, everything else. It's either you are cis or something
-            else.
+            "There's definitely some trauma around it, too, you know, it's like,
+            is it always safe to identify in some way that's…different in some
+            ways. So it's just not so easy always to [share information to a
+            platform] that you don't feel safe with."
           </p>
           <p class="theme-description">
-            The graph on the left shows LGBTQ+ users' desires to be presented
-            accurate representative information to fill when signing up for user
-            accounts, however, the example below lacks a multitude of drop down
-            options for users to accurate identify as they would like resulting
-            in misrepresentation.
+            The sankey diagram shows users varying comfort in sharing pronoun
+            information across platforms, however, some users show hesitancy in
+            sharing such information. The below account makes this information
+            publicly visible, which can result in higher levels of discomfort
+            for some LGBTQ+ users.
           </p>
           <div class="theme-plot">
-            <!-- VIZ PLACEHOLDER -->
-            <svg width="600px" height="400px">
-              <rect fill="green" width="100px" height="100px"></rect>
-            </svg>
+            <h3>
+              LGBTQ+ Population Comfort Levels in Sharing Pronouns Across
+              Digital Applications
+            </h3>
+            <div id="observablehq-svg11-5166fb70"></div>
+            <link
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
+            />
+            <script type="module">
+              import {
+                Runtime,
+                Inspector,
+              } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+              import define from "https://api.observablehq.com/d/eb49b91e3a3b00a1.js?v=3";
+              new Runtime().module(define, (name) => {
+                if (name === "svg11")
+                  return new Inspector(
+                    document.querySelector("#observablehq-svg11-5166fb70")
+                  );
+              });
+            </script>
+          </div>
+          <div class="theme-screenshot">
+            <img class="theme-shot" src="./images/gender_options_1.png" />
           </div>
         </div>
         <div class="themed-section">
           <p class="theme-title">
-            <span class="main-title">Reluctant</span> to share representative
+            <span class="main-title">Reluctantly</span> sharing representative
             information.
           </p>
           <p class="user-quote">
-            The lack of options and the way they bunch together the other
-            options that aren't just male or female, like non-binary, trans,
-            gender fluid, everything else. It's either you are cis or something
-            else.
+            "I'm just so used to it, I'm used to choosing all these markers
+            about yourself forever and I'm desensitized to it. Ugh, this is what
+            I have to do even if it's not truly how I want to fill it out. It's
+            just how it goes."
           </p>
           <p class="theme-description">
-            The graph on the left shows LGBTQ+ users' desires to be presented
-            accurate representative information to fill when signing up for user
-            accounts, however, the example below lacks a multitude of drop down
-            options for users to accurate identify as they would like resulting
-            in misrepresentation.
+            Since the example below has required fields for gender, users are
+            forced to provide information that they may not necessarily have
+            otherwise chosen to give. The bar chart on the right shows users
+            responses to Q12. While users did feel somewhat included, given that
+            the below example is a social media app, we can explore the nuances
+            that come with sharing information across varying platforms in
+            exploring Q11.
           </p>
           <div class="theme-plot">
-            <!-- VIZ PLACEHOLDER -->
-            <svg width="600px" height="400px">
-              <rect fill="green" width="100px" height="100px"></rect>
-            </svg>
+            <img class="theme-viz" src="./images/horiz_bar_plot.png" />
+          </div>
+          <div class="theme-screenshot">
+            <img class="theme-shot" src="./images/gender_options_2.png" />
           </div>
         </div>
       </div>
@@ -274,10 +314,7 @@
                   </p>
                 </div>
                 <div class="col">
-                  <!-- VIZ PLACEHOLDER -->
-                  <svg width="600px" height="400px">
-                    <rect fill="green" width="100px" height="100px"></rect>
-                  </svg>
+                  <img class="playbook-viz" src="./images/tree_diagram.png"/>
                 </div>
               </div>
             </div>
@@ -341,8 +378,10 @@
                       </object>
                     </div>
                     <script type="text/javascript">
-                      var divElement = document.getElementById("viz1683496925082");
-                      var vizElement = divElement.getElementsByTagName("object")[0];
+                      var divElement =
+                        document.getElementById("viz1683496925082");
+                      var vizElement =
+                        divElement.getElementsByTagName("object")[0];
                       if (divElement.offsetWidth > 800) {
                         vizElement.style.width = "1000px";
                         vizElement.style.height = "827px";
@@ -356,7 +395,10 @@
                       var scriptElement = document.createElement("script");
                       scriptElement.src =
                         "https://public.tableau.com/javascripts/api/viz_v1.js";
-                      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                      vizElement.parentNode.insertBefore(
+                        scriptElement,
+                        vizElement
+                      );
                     </script>
                   </div>
                 </div>
@@ -388,10 +430,7 @@
                   </p>
                 </div>
                 <div class="col">
-                  <!-- VIZ PLACEHOLDER -->
-                  <svg width="600px" height="400px">
-                    <rect fill="green" width="100px" height="100px"></rect>
-                  </svg>
+                  <img src="./images/tree_diagram.png"/>
                 </div>
               </div>
             </div>
@@ -451,7 +490,7 @@
                   </p>
                 </div>
                 <div class="col">
-                  <img class="playbook-viz" src="./images/playbook_QR.png"/>
+                  <img class="playbook-viz" src="./images/playbook_QR.png" />
                 </div>
               </div>
             </div>
